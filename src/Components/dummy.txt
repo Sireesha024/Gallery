@@ -1,0 +1,25 @@
+import "./styles.css";
+import React, { useState } from "react";
+import {
+  SmileTwoTone,
+  HeartTwoTone,
+  CheckCircleTwoTone
+} from "@ant-design/icons";
+export default function App() {
+  const [color, setColor] = useState("grey");
+  const [fav, setFav] = useState(1);
+  const toggle = () => {
+    if (fav === 1) {
+      setColor("red");
+      setFav(0);
+    } else {
+      setColor("grey");
+      setFav(1);
+    }
+  };
+  return (
+    <div className="App">
+      <HeartTwoTone height="20em" onClick={toggle} twoToneColor={color} />
+    </div>
+  );
+}

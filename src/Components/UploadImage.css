@@ -1,0 +1,11 @@
+.up-form{
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    margin: auto;
+    height: 100%;
+    color: rgb(29, 157, 173);
+    text-align: center;
+    text-size-adjust:none;
+}
+
